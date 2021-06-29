@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "dev:local": "NODE_ENV=\"local\" nuxt",
+    "dev:docker": "NODE_ENV=\"docker\" nuxt",
+    "dev:stg": "NODE_ENV=\"stg\" nuxt",
+    "dev:pro": "NODE_ENV=\"pro\" nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
