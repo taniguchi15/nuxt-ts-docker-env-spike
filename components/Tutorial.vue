@@ -8,6 +8,7 @@
       </a>
 
       <h1>Hello world!</h1>
+      <p>NODE-ENV: {{nodeEnv}}</p>
 
       <div class="mt-8 bg-white overflow-hidden shadow sm:rounded-lg p-6">
         <h2 class="text-2xl leading-7 font-semibold">
@@ -47,3 +48,14 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+  import Vue from 'vue'
+  export default Vue.extend({
+    data () {
+      return {
+        nodeEnv: process.env.NODE_ENV
+      }
+    }
+  })
+</script>
