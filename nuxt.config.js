@@ -1,7 +1,13 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
+  env : process.env.NODE_ENV === 'local' ?
 
+  {
+    NODE_ENV: 'local'
+  }
+  :
+  {},
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
